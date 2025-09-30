@@ -1,6 +1,6 @@
 # BMAD Universal Template 🚀
 
-This is a **project starter template** that integrates the **BMAD method** directly into your development workflow:
+This is a **project starter template** that integrates the [**BMAD method**](https://github.com/bmad-code-org/BMAD-METHOD) directly into your development workflow:
 
 - 🎭 **BMAD Agents** (Analyst, PM, Architect, SM, PO, POSM, Platform Engineer, Design Architect, Dev) — prewired with prompts & checklists.
 - ⚡ **Slash Commands** in Copilot Chat (`/analyst`, `/pm`, `/architect`, …) for role-based interactions, just like Claude Code.
