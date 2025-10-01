@@ -6,7 +6,6 @@ mkdir -p .ai/prompts docs/checklists
 # Project Docs
 - [PRD](prd.md)
 - [Architecture](architecture.md)
-- [Checklists](checklists/)
 EOF
 [ -f .ai/copilot-instructions.md ] || cat > .ai/copilot-instructions.md << 'EOF'
 # BMAD Copilot Instructions (Project)

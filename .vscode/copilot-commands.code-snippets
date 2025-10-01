@@ -1,0 +1,74 @@
+{
+    "Analyst Agent (/analyst)": {
+        "prefix": "/analyst",
+        "body": [
+            "@workspace",
+            "Use .ai/prompts/analyst-brainstorm.md."
+        ],
+        "description": "BMAD Analyst brainstorming macro"
+    },
+    "PM Agent (/pm)": {
+        "prefix": "/pm",
+        "body": [
+            "@workspace",
+            "Use .ai/prompts/pm-prd-review.md."
+        ],
+        "description": "BMAD Product Manager PRD review"
+    },
+    "Architect Agent (/architect)": {
+        "prefix": "/architect",
+        "body": [
+            "@workspace",
+            "Use .ai/prompts/architect-check.md."
+        ],
+        "description": "BMAD Architect checklist validation"
+    },
+    "Scrum Master Agent (/sm)": {
+        "prefix": "/sm",
+        "body": [
+            "@workspace",
+            "Use .ai/prompts/sm-story-draft.md."
+        ],
+        "description": "BMAD SM story drafting"
+    },
+    "Product Owner (/po)": {
+        "prefix": "/po",
+        "body": [
+            "@workspace",
+            "Run PO Master Checklist across docs/prd.md and docs/architecture.md (and frontend-architecture.md if present). Summarize misalignments and propose exact edits."
+        ],
+        "description": "PO validation + corrections"
+    },
+    "Frontend Agent (/fe)": {
+        "prefix": "/fe",
+        "body": [
+            "@workspace",
+            "Frontend Specialist: Generate Angular and Vue implementations using Tailwind + Preline. Include Light/Dark examples and accessibility notes; ground in docs/prd.md and docs/architecture.md."
+        ],
+        "description": "FE macro (Angular+Vue with Tailwind/Preline)"
+    },
+    "Backend Agent (/backend)": {
+        "prefix": "/backend",
+        "body": [
+            "@workspace",
+            "Backend Specialist: Create FastAPI router+schemas with Pydantic, logging, error handling, and OpenAPI examples. Include docker/devcontainer run commands; ground in docs/architecture.md."
+        ],
+        "description": "FastAPI macro"
+    },
+    "Flutter Agent (/flutter)": {
+        "prefix": "/flutter",
+        "body": [
+            "@workspace",
+            "Flutter Specialist: Produce iOS (Cupertino) and Android (Material 3) variants. Respect native nav and theming. Include platform switch and tests; ground in docs/prd.md."
+        ],
+        "description": "Flutter platform-native macro"
+    },
+    "Platform Engineer (/platform)": {
+        "prefix": "/platform",
+        "body": [
+            "@workspace",
+            "Platform Engineer: Review devcontainers and CI/CD. Ensure api/ and frontend/ devcontainers build from project Dockerfiles; propose fixes and GitHub Actions skeletons."
+        ],
+        "description": "Devcontainers + CI/CD"
+    }
+}

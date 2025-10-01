@@ -7,6 +7,7 @@
             "version": "lts"
         }
     },
+    "postCreateCommand": "[ -d bmad-agent ] || (npm run install:bmad || npx bmad-method install); bash scripts/bmad-bootstrap.sh",
     "mounts": [
         "source=bmad-pip-cache,target=/root/.cache/pip,type=volume",
         "source=bmad-npm-cache,target=/root/.npm,type=volume"
@@ -14,7 +15,6 @@
     "containerEnv": {
         "PIP_CACHE_DIR": "/root/.cache/pip"
     },
-    "postCreateCommand": "bash scripts/bmad-bootstrap.sh",
     "customizations": {
         "vscode": {
             "extensions": [
