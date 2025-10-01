@@ -1,0 +1,4 @@
+[submodule "bmad-agent"]
+	path = bmad-agent
+	url = https://github.com/bmad-code-org/BMAD-METHOD.git
+	branch = main
