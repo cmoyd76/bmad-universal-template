@@ -1,14 +1,28 @@
 {
     "name": "BMAD Template",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/devcontainers/features/node:1": {
             "version": "lts"
-        },
-        "ghcr.io/devcontainers/features/python:1": {
-            "version": "3.11"
         }
     },
-    "postCreateCommand": "bash scripts/bmad-bootstrap.sh"
+    "mounts": [
+        "source=bmad-pip-cache,target=/root/.cache/pip,type=volume",
+        "source=bmad-npm-cache,target=/root/.npm,type=volume"
+    ],
+    "containerEnv": {
+        "PIP_CACHE_DIR": "/root/.cache/pip"
+    },
+    "postCreateCommand": "bash scripts/bmad-bootstrap.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot",
+                "github.copilot-chat",
+                "yzhang.markdown-all-in-one",
+                "bierner.markdown-mermaid"
+            ]
+        }
+    }
 }
